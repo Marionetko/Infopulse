@@ -1,0 +1,134 @@
+body {
+    background: black;
+}
+
+.homepage{
+	font-size: 18pt;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	padding: 2px;
+}
+
+.homepage:hover {
+    background: white;
+    border-radius: 2px;
+    font-size: 18pt;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding: 2px;
+}
+.headline{
+    font-family: Arial;
+    font-size: 18pt;
+    color: white;
+}
+.firstblock{
+    background: white;
+    width: 500px;
+    border: 10px dotted #f90000;
+    padding: 10px;
+    font-family: Helvetica;
+    font-size: 14pt;
+    font-style: italic;
+    text-align: center;
+    line-height: 20pt;
+    text-indent: 10px;
+    margin: 20px 5px;
+}
+.secondblock{
+    background: white;
+    width: 500px;
+    border: 10px dashed #f90000;
+    padding: 10px;
+    font-family: Times New Roman;
+    font-size: 14pt;
+    font-style: oblique;
+    text-align: right;
+    text-decoration: underline;
+    line-height: 20pt;
+    text-indent: 10px;
+    margin: 20px 5px;
+}
+.thirdblock{
+    background: white;
+    width: 500px;
+    border: 10px solid #f90000;
+    padding: 10px;
+    font-family: Times;
+    font-size: 14pt;
+    text-align: justify;
+    text-decoration: overline;
+    line-height: 20pt;
+    text-indent: 40px;
+    margin: 20px 5px;
+}
+.fourthblock{
+    background: white;
+    width: 500px;
+    border: 10px double #f90000;
+    padding: 10px;
+    font-family: Courier New;
+    font-size: 14pt;
+    text-align: left;
+    text-decoration: line-through;
+    line-height: 20pt;
+    text-indent: 16px;
+    margin: 20px 5px;
+}
+.fifthblock{
+    background: white;
+    width: 500px;
+    border: 10px groove #f90000;
+    padding: 10px;
+    font-family: Courier;
+    font-size: 14pt;
+    font-style: italic;
+    text-align: left;
+    line-height: 20pt;
+    /* text-indent: 10px; */
+    margin: 20px 5px;
+}
+.sixthblock{
+    background: white;
+    width: 500px;
+    border: 10px ridge #f90000;
+    padding: 10px;
+    font-family: Verdana;
+    font-size: 14pt;
+    font-style: oblique;
+    text-align: center;
+    line-height: 20pt;
+    text-indent: 10px;
+    text-decoration: underline;
+    margin: 20px 5px;
+}
+.seventhblock{
+    background: white;
+    width: 500px;
+    border: 10px inset #f90000;
+    padding: 10px;
+    font-family: Georgia;
+    font-size: 14pt;
+    font-style: italic;
+    text-align: right;
+    line-height: 20pt;
+    text-indent: 10px;
+    text-decoration: overline;
+    margin: 20px 5px;
+}
+.eighthblock{
+    background: white;
+    width: 500px;
+    border: 10px outset #f90000;
+    padding: 10px;
+    font-family: Palatino;
+    font-size: 14pt;
+    /* font-style: italic; */
+    text-align: justify;
+    line-height: 20pt;
+    text-indent: 45px;
+    text-decoration: line-through;
+    margin: 20px 5px;
+}
