@@ -1,0 +1,531 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Layout Tables</title>
+		<meta charset='utf-8' />
+	</head>
+	<body>
+	
+		<a href='/index.html'>
+			<strong>Home</strong>
+		</a>
+		
+		<table>
+			<tr>
+				<td>
+					<a href='./hw-forms.html'>
+						<strong>&lt Previous</strong>
+					</a>
+				</td>
+			</tr>
+		</table>
+		
+		<h1>Layout Tables</h1>
+		
+		<table border='1' align='center'>
+			<tr>
+				<td width='200'>
+					<a href='https://habr.com/en/' target='_blank'>
+						<img 
+							src='./img/16087885.png' 
+							alt='letter h in the blue square' 
+							title='habr.com'
+							/>
+					</a>		
+				</td>
+				<td width='600' align='center'>
+					<em>
+						On Habré thinking people share a unique experience. 
+						It will be equally interesting to programmers and journalists, administrators and advertisers, 
+						analysts and designers, top and middle managers, owners of large companies and small firms, 
+						as well as all those for whom IT is not just two letters of the alphabet.
+					</em>
+				</td>
+				<td width='200' align='center'>
+					<h1>Contact Us</h1>
+				</td>
+			</tr>
+			<tr>
+				<td width='200' valign='top' align='left'>
+					<ul>
+						<li>
+							<h2>
+								<a href='#chapter1'>Story start</a>
+							</h2>
+						</li>
+						<li>
+							<h2>
+								<a href='#chapter2'>Neural network</a>
+							</h2>
+						</li>
+						<li>
+							<h2>
+								<a href='#chapter3'>Away from all-or-nothing thing</a> 
+							</h2>
+						</li>
+						<li>
+							<h2>
+								<a href='#chapter4'>Training</a> 
+							</h2>
+						</li>
+						<li>
+							<h2>
+								<a href='#source'>Source</a>
+							<h2>
+						</li>
+					</ul>
+				</td>
+				<td width='600'>
+				
+				<h1>Artificial neural networks explained in simple words</h1>
+				
+				<h2>
+					<a name='chapter1'>Story start</a>
+				</h2>
+				
+				<img 
+					align='left'
+					src='./img/8b767008109149b9b48ee3058e62e028.png' 
+					alt='family life plan' 
+					title='scheme №1' 
+					/>
+				
+				<p>When I used to start a conversation about neural networks over a bottle of beer, people were casting 
+				glances at me of what seemed to be fear; they grew sad, sometimes with their eyelid twitching. 
+				In rare cases, they were even eager to take refuge under the table. Why? These networks are simple 
+				and instinctive, actually. Yes, believe me, they are! Just let me prove this is true!</p>
+				
+				<p>Suppose there are two things I’m aware of about the girl: she looks pretty to my taste or not, 
+				and I have lots to talk about with her or I haven’t. True and false will be one and zero respectively. 
+				We’ll take similar principle for appearance. The question is: 
+				<em>“What girl I’ll fall in love with,and why?”</em></p>
+				
+				<p>We also can think it straight and uncompromisingly: <em>“If she looks pretty and there’s plenty to 
+				talk about, then I will fall in love. If neither is true, then I quit”</em>.</p>
+				
+				<p>
+					<strong>But what if I like the lady but there’s nothing to talk about with her? 
+					Or vice versa?</strong>
+				</p>
+				
+				<p>It’s understood that for each of us one of these things will be of more importance. 
+				To be precise, each criterion has its own degree of importance, or in other words its weight. 
+				Criterion multiple by weight will give us “appearance impact” or “conversation impact”, accordingly.</p>
+				
+				<p>Now, with my conscience clear I can answer my own question:</p>
+				
+				<img 
+					src='./img/71ecaa85be16ae46fafdf6d35a3dd984.png' 
+					alt='in love result' 
+					title='scheme №2'
+					align='left'
+					/>
+				
+				<p>
+					<em>“If charisma impact and talkativeness impact in total make value more than “in love” 
+					then I’ll go for it …”</em>
+				</p>
+				
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				
+				<p>So if I put more weight in lady’s talkativeness and less weight in the way she looks, 
+				then in a disputable situation I will fall in love with a person I’d like to chat with. 
+				The opposite being true, too.</p>
+				
+				<p align='center'>
+					<img 
+						src='./img/f559129f9c3cdf4a8a6ddeeebbc22b71.png' 
+						alt='in love area graph #1' 
+						title='scheme №3' 
+						/>
+				</p>
+		
+				
+				<p>This rule is a neuron proper.</p>
+				
+				<p><strong>An artificial neuron is a function that transforms multiple inputs into one output.</strong>
+				By setting up the weights of these inputs and threshold of excitation, we adjust the 
+				neuron’s adequacy. Basically, for many of us, the science of life ends on this level, 
+				but this story is not about us, is it?</p>
+				
+				<p>Let’s draw a few more conclusions:</p>
+				
+				<ul>
+					<li>
+						<p>In case both weights are low, it will be difficult for me to fall in love with anyone.</p>
+					</li>
+					<li>
+						<p>In case both weights are very high, I can fall in love even with a light pole.</p>
+					</li>
+					<li>
+						<p>You can also make me love the pole if you decrease my amorousness threshold.
+						But I beg you not to do this to me! Let’s forget about it for now, okay?</p>
+					</li>
+				</ul>
+				
+				<h2>
+					<a name='chapter2'>Neural network</a>
+				</h2>
+				
+				<p>We can hardly find clearly nice and explicitly talkative ladies. 
+				Not all amorousnesses are equal no matter who says what. 
+				For this reason, we should avoid brutal and uncompromising “0” and “1” and replace them 
+				with percentage values. Then, it’s possible to say “I’m love-struck” (80%) or 
+				“This lady is not very talkative” (20%).</p>
+				
+				<p>Our primitive “all-or-nothing neuron” from the above does not fit the case. 
+				It is superseded with a “wise neuron” which operates giving us values from 0 to 1 
+				depending on input data.</p>
+				
+				<img 
+					src='./img/ad0246491efe86ba3733706d632955c7.png' 
+					alt='neuron graph' 
+					title='scheme №4' 
+					align='left'
+					/>
+				
+				<p>A “wise neuron” may say to us: “This lady is pretty enough but I don’t know 
+				any common points we can talk about, and that’s why I’m not so fond of her”.</p>
+
+				<p align='center'>
+					<img 
+						src='./img/0842f207706a97bcdeecb188aba96d18.png' 
+						alt='in love area graph #2' 
+						title='scheme №5' 
+						/>
+				</p>
+				
+				<p>Lets’ go further. We’ll use these two facts for a different assessment: 
+				how good it’ll be to work (cooperate) with such girl? Our actions will be absolutely 
+				the same – let’s add a wise neuron and adjust weights to feel comfortable.</p>
+				
+				<p>Judging girls based on two features will give us a very rough result. 
+				Let’s introduce one more criterion – money! It will be ranging from zero (absolutely poor) 
+				till one (Rockefeller’s daughter). Let’s see how our assumptions change with the money 
+				criterion introduced.</p>
+				
+				<p>For myself, I have decided that in terms of sexual appeal money are not so important, 
+				but her chic look will definitely have an effect on me. For this reason, I keep the money 
+				weight low yet positive.</p>
+				
+				<p>In terms of business relationships, it makes absolutely no difference for me how rich 
+				is the girl, so I suggest the money weight to be zero.</p>
+				
+				<img 
+					src='./img/4e6a3ae2ba8447c1aeb5259259e91f4a.png' 
+					alt='in love/cooperation graph' 
+					title='scheme №6'
+					align='left'
+					/>
+				
+				<p>It’s folly to check out a girl just for work or love affair. Let’s consider how pleasing 
+				could it be if we decided to travel with her:</p>
+				
+				<ul>
+					<li>
+						<p>Charisma is neutral here (weight is zero or very low).</p>
+					</li>
+					<li>
+						<p>Being talkative is good (positive weight).</p>
+					</li>
+					<li>
+						<p>In real trips, when the money runs out suddenly, it’s a very thrilling time.
+						For this reason I’ll give the money a slightly negative weight.</p>
+					</li>
+				</ul>
+				
+				<p>When making all three schemes into one, we’ll discover that we have shifted to a more 
+				thoughtful level of judgment: from charisma, dollar bills and talkativeness – to admiration, 
+				cooperation, and comfort when traveling together. 
+				
+				<br />
+				
+				<img 
+					src='./img/fb7717cdd11f9eb9e88474e7c10f60cb.png' 
+					alt='marry-or-not graph' 
+					title='scheme №7'
+					align='left'
+					/>
+				
+				Note these signals can vary from zero to one, 
+				too. This means I can finally add one last “all-or-nothing neuron” to let it answer 
+				my question exactly: “should I marry her or not?”</p>
+				
+				<p>Well, of course, not everything is that simple (in terms of women). 
+				Let’s introduce a little of drama and reality to our simple and rosy world. 
+				First, we’ll make the “marry-or-not” neuron a wise one. It’s a human nature to hesitate, 
+				one way or another. One more thing, we’ll add the “want-children-from-her” neuron, 
+				and to be very close to the reality – “keep-away-from-her” neuron.</p>
+				
+				<p>I understand nothing of women, so my primitive network now looks like the illustration 
+				at the top of this article.</p>
+				
+				<p>Input assertions are called “input layer”, final judgments – “output layer”, 
+				while hidden in the center is a “hidden layer”. The hidden layer is my judgments and 
+				unfinished thoughts no one knows about. Hidden can be several layers or none of them.</p>
+				
+				<h2>
+					<a name='chapter3'>Away from all-or-nothing thing</a>
+				</h2>
+				
+				<p>Do you remember my talking about the negative effect the money has on my desire 
+				to go on a trip with someone? Well, I was cheating. For joint trips somewhere 
+				you’d better have a person by your side with money, neither too much nor very little. 
+				For me, it seems more exciting.</p>
+				
+				<p>Still, here I have a challenging situation:</p>
+				
+				<table border='1' align='center'>
+					<tr>
+						<td>
+							<p><em>If I make money weight negative, then the less money the better.<br />
+							If money weight is positive, the more money the better.<br />
+							If money has zero weight, then it does not matter at all.</em></p>
+						</td>
+					</tr>
+				</table>
+				
+				<p>So, the weight only is not enough for me to figure out “no-more-no-less” situation!</p>
+				
+				<p>To bypass it, I’ll invent two new neurons: “money-is-much”, “money-is-little” 
+				and feed my lady’s cash flow to their inputs.</p>
+				
+				<p>Now I have two judgments: “much” and “little”. If two outputs are insignificant, 
+				then I literary get “neither-much-nor-little” thing. That is, at the output we’ll 
+				place one more neuron with negative weights:</p>
+				
+				<img 
+					src='./img/127b1186944578e3a69817831fa946f0.png' 
+					alt='money graph' 
+					title='scheme №8'
+					align='left'
+					/>
+				
+				<p><em>“Neither-much-nor-little” thing: Arrows in red and blue showing positive and 
+				negative relations respectively.</em></p>
+				
+				<br />
+				<br />
+				<br />
+				
+				<p>In general, this means neurons are reminiscent of blocks from a construction kit. 
+				Like a processor is built from transistors, neurons together can form a brain. 
+				For instance, “rich-or-smart” judgment can be presented as follows:</p>
+				
+				<img 
+					src='./img/b4db8ab6f26763c57409def5549a2c77.png' 
+					alt='money or smart' 
+					title='scheme №9' 
+					align='left'
+					/>
+				<p>
+					<em>“Either-or” thing: Arrows in red and blue showing positive and negative 
+					relations respectively.</em>
+				</p>
+				
+				<br />
+				<br />
+				<br />
+				
+				<p>Or this way:</p>
+				
+				<img 
+					src='./img/6e6c49f4c7e732846c59661cc9a7e911.png' 
+					alt='what_is_there' 
+					title='what_is_it_for' 
+					align='left'
+					/>
+				
+				<p><em>We can replace “wise” neurons with “all-or-nothing” ones and get XOR logical operator. 
+				The point is not to forget to adjust thresholds of excitation.</em></p>
+				
+				<p>Unlike transistors and uncompromising “if – then” logic of a typical programmer, 
+				neuron network is capable of weighted decisions, the results of which will be changing 
+				through smooth variations of input parameters. Here is the wisdom!</p>
+				
+				<p>I’d like to draw your attention that adding a layer comprising two neurons has enabled 
+				the “neither-much-nor-less” neuron to produce a more complex and balanced judgment, 
+				switching to the new logic level. This is a transition from “much” or “less” 
+				to a compromise solution, to judgments more thoughtful from the philosophy point of view. 
+				What if we add new hidden layers? We are able to embrace that simple network with our mind, 
+				but what about a network having 7 layers? Are we still able to perceive the deepness of 
+				its judgments? And what if each of them, including the input layer, will have about 
+				one thousand of neurons? What do you think it will be capable of?</p>
+				
+				<p>Imagine my making this marriage and love thing more and more complex to finally end up with 
+				such a network. Somewhere over there it hides all our nine original neurons, 
+				thus turning it more into reality. No matter how hard we would try, we simply have no chance 
+				to understand all dependencies and the profound nature of judgments made by such network. 
+				For me, the transition from a 3x3 network to 7x1000 can be compared to understanding 
+				the scale of a galaxy, if not the universe compared with my own body size. Put simply, 
+				I won’t succeed doing that. The solution such network would provide through the reaction 
+				of any of its neurons can’t be explained by logic. It’s what we rather call “intuition” 
+				in everyday life (at least “one of… or either of…”), which is inexplicable desire 
+				of the system or a hint it is giving to us.</p>
+				
+				<p>However, unlike our synthetic example of a 3x3 network, where each neuron in the hidden 
+				layer is sufficient and accurately formalized, in the real network this is not necessarily so. 
+				In a well-designed network, the size of which is not excessive for solving the given task, 
+				each neuron will be detecting a certain attribute, but this absolutely does not mean that 
+				in our language we can find a word or phrase suitable for describing it. Applicable to the 
+				individual this means his or her certain feature you can feel but cannot explain it in words.</p>
+				
+				<h2>
+					<a name='chapter4'>Training</a>
+				</h2>
+				
+				<p>A few lines above I mentioned a well-designed network, hence likely to provoke your 
+				unspoken question: “And how can we design a network comprising thousands of neurons. 
+				How many “man years” and ruined lives do we need to achieve that?” I’m afraid answering 
+				the second part. Way better will be to make adjustment procedures automatic, 
+				forcing the network to do that job itself. Such automation process is called training. 
+				To provide a general idea, I should go back to the original metaphor of “critically important issue”:</p>
+				
+				<p>We come to this world with our mind absolutely clear and innocent, our neuron network being 
+				completely ignorant about ladies. We need to set it up in a seamless way for happiness and joy to 
+				settle in our house. To achieve this, we require some experience which can be developed 
+				in a number of ways:</p>
+				
+				<ol>
+					<li>
+						<p>Having a trainer by your side to do the job (for dreamers and sentimentalists). 
+						Watch Hollywood soap operas and read gushy novels. One can also take parents and/or friends 
+						for information gathering. Then, depending on how much information is obtained, it’s time to 
+						check the knowledge accumulated so far. Failing to succeed, abort the attempt and rewind to start 
+						with love novels again.</p>
+					</li>
+					<li>
+						<p>No trainer to help your (for desperate experimenters). Use trial-and-error method to marry 
+						a dozen or two of women. When married, each time scratch your head in confusion. Repeat until 
+						you think it’s enough and you feel you know how this usually happens.</p>
+					</li>
+					<li>
+						<p>No trainer to help you, Option 2 (desperate optimists will choose this). Let it go and 
+						do something for life to find oneself married one day. After that, re-adjust your network 
+						in accordance with the current reality to be sure that everything suits you well.</p>
+					</li>
+				</ol>
+				
+				<p>Logically, I should further write all things down in detail, but I’m afraid that without math 
+				there will be too much of philosophy. For this reason, I believe I better stop right here. 
+				Maybe next time?</p>
+				
+				<p>Everything stated above is true for artificial neuron networks of “perceptron” type. 
+				Other networks are alike according to principles but also have their own peculiarities.</p>
+				
+				<p>I wish you have good weights and excellent samplings for your training! And if you don’t need 
+				them already, then tell someone else about this article.</p>
+
+				</td>
+				<td width='200' valign='top' align='center'>
+					<a href='tel:+74996535961'>
+						<img 
+							src='./img/2-ikonka-telefon-150x150.png' 
+							alt='phone icon' 
+							title='click to call' 
+							/>
+					</a>
+					
+					<h3>Call us</h3>
+					
+					<br />
+					
+					<a href='mailto:info@habr.com'>
+						<img 
+							src='./img/email-icon-150x150.png' 
+							alt='email icon' 
+							title='click to email' 
+							/>
+					</a>
+					
+					<h3>Email us</h3>
+					
+					<br />
+					
+					<a href='https://www.facebook.com/habr.eng/' target='_blank'>
+						<img 
+							src='./img/facebook-icon-small.jpg' 
+							alt='facebook logo in circle' 
+							title='follow us' 
+							/>
+					</a>
+					
+					<h3>Facebook</h3>
+					
+					<br />
+					
+					<a href='https://twitter.com/habr_eng' target='_blank'>
+						<img 
+							src='./img/twitter-icon-150x150.png' 
+							alt='twitter logo in circle' 
+							title='our twitter' 
+							/>
+					</a>
+					
+					<h3>Twitter</h3>
+					
+					<br />
+					
+					<a href='https://telegram.me/habr_eng' target='_blank'>
+						<img 
+							src='./img/telegram-icon.png' 
+							alt='telegram logo in circle' 
+							title='our telegram' 
+							/>
+					</a>
+					
+					<h3>Telegram</h3>
+					
+					<br />
+					
+					<a href='viber://123456'>
+						<img 
+							src='./img/viber-icon.png' 
+							alt='viber icon in circle' 
+							title='fake viber' 
+							/>
+					</a>
+					
+					<h3>Viber</h3>
+					
+					<br />
+					
+					<a href='skype:echo123'>
+						<img 
+							src='./img/transparent_skype_icon_by_snowbowlkirby_d7ahwix-150.png' 
+							alt='skype logo' 
+							title='fake skype' 
+							/>
+					</a>
+					
+					<h3>Skype</h3>
+					
+				</td>
+			</tr>
+			<tr>
+				<td width='200'></td>
+				<td width='600' align='right'>
+					<h3>
+						by 
+						
+						<a name='source'></a>
+						
+						<a href='https://habr.com/ru/users/tmteam/' target='_blank'>tmteam</a>
+						
+						<br />
+						
+						source 
+						
+						<a href='https://habr.com/ru/post/454484/' target='_blank'>habr.com</a>
+					</h3>
+				</td>
+				<td width='200'></td>
+			</tr>
+		</table>
+	</body>
+</html>
