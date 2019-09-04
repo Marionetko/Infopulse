@@ -1,0 +1,47 @@
+body{
+    background: url(http://www.techort.com/wp-content/uploads/2017/05/dan-abramovs-unfolded-comment-on-the-article-things-that-no-one-will-tell-you-about-react-translation.jpg) repeat 100% 100%;
+    background-size: auto;
+}
+
+.text{
+	background: #ffffff;
+	width: 1000px;
+	height: 500px;
+	font-family: Arial, sans-serif;
+	font-size: 16pt;
+	line-height: 1.56;
+	overflow-y: scroll;
+	margin: 50px 250px;
+	padding: 25px 50px;
+	border: 3px solid #78a3b6;
+	border-radius: 6px;
+}
+
+.textlink {
+    color: #79a4b7;
+    transition: all 0.2s ease 0s;
+    text-decoration: none;
+}
+
+.textlink:hover {
+    color: white;
+    background: #78a3b6;
+    border-radius: 4px;
+    text-decoration: underline;
+}
+
+.leftpicture{
+    width: 400px;
+    float: left;
+    margin: 25px 25px 25px 0;
+}
+
+.rightpicture{
+	width: 350px;
+	float: right;
+	margin: 25px 0 25px 25px;
+}
+
+.sign{
+	text-align:right;
+}
