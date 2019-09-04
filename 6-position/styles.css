@@ -1,0 +1,562 @@
+body{
+    background: url(./pics/4236532-background-images.jpg) no-repeat;
+    background-size: cover;
+    position: fixed;
+}
+
+.navi{
+    position: relative;
+}
+
+.link__option{
+    top: 34px;
+}
+
+.link{
+    font-family: Arial;
+    font-size: 16pt;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+    position: absolute;
+}
+
+.link:hover{
+    background: white;
+    color: #176086;
+}
+
+.headline{
+	width: 630px;
+	height: 70px;
+	margin: 25px;
+	position: relative;
+	left: 54%;
+}
+
+.headline__name{
+	font-family: Georgia;
+	font-size: 42pt;
+	font-style: italic;
+	color: white;
+}
+
+.cardtable{
+    background: green;
+    width: 800px;
+    height: 500px;
+    border: 18px solid darkgreen;
+    border-radius: 92px;
+    position: relative;
+    left: 44%;
+}
+
+.cardtable__deck{
+    position: relative;
+    left: 64%;
+    top: -24px;
+}
+
+.deck__firstcard{
+    background: url(./pics/back.png) white;
+    background-size: 54px 82px;
+    width: 54px;
+    height: 81px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: 238px;
+    left: 44px;
+    z-index: 4;
+}
+
+.deck__firstcard:hover{
+    background: url(./pics/aceofdiamonds.png) white;
+    background-size: 54px 82px;
+    width: 54px;
+    height: 81px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: 260px;
+    left: 20px;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.deck__secondcard{
+    background: url(./pics/back.png) white;
+    background-size: 54px 82px;
+    width: 54px;
+    height: 81px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: 154px;
+    left: 42px;
+    z-index: 3;
+}
+
+.deck__thirdcard{
+    background: url(./pics/back.png) white;
+    background-size: 54px 82px;
+    width: 54px;
+    height: 81px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: 70px;
+    left: 40px;
+    z-index: 2;
+}
+
+.deck__fourthcard{
+    background: url(./pics/jackofhearts.png) white;
+    background-size: contain;
+    width: 81px;
+    height: 54px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    z-index: 1;
+}
+
+.cardtable__playerone{
+    position: relative;
+    left: 268px;
+    top: -134px;
+}
+
+.playerone__firstcard{
+    background: url(./pics/aceofclubs.png) white;
+    background-size: 54px 82px;
+    width: 54px;
+    height: 81px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: 238px;
+    left: 4px;
+    z-index: 1;
+}
+
+.playerone__firstcard:hover {
+    background: url(./pics/aceofclubs.png) white;
+    background-size: 54px 82px;
+    width: 54px;
+    height: 81px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: 210px;
+    left: 4px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.playerone__secondcard{
+    background: url(./pics/sixofhearts.png) white;
+    background-size: 54px 82px;
+    width: 54px;
+    height: 81px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: 155px;
+    left: 60px;
+    z-index: 2;
+}
+
+.playerone__secondcard:hover{
+    background: url(./pics/sixofhearts.png) white;
+    background-size: 54px 82px;
+    width: 54px;
+    height: 81px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: 127px;
+    left: 60px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.playerone__thirdcard{
+    background: url(./pics/queenofspades.png) white;
+    background-size: 54px 82px;
+    width: 54px;
+    height: 81px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: 72px;
+    left: 116px;
+    z-index: 3;
+}
+
+.playerone__thirdcard:hover{
+    background: url(./pics/queenofspades.png) white;
+    background-size: 54px 82px;
+    width: 54px;
+    height: 81px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: 44px;
+    left: 116px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.playerone__fourthcard{
+    background: url(./pics/kingofdiamonds.png) white;
+    background-size: 54px 82px;
+    width: 54px;
+    height: 81px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: -11px;
+    left: 172px;
+    z-index: 4;
+}
+
+.playerone__fourthcard:hover{
+    background: url(./pics/kingofdiamonds.png) white;
+    background-size: 54px 82px;
+    width: 54px;
+    height: 81px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: -39px;
+    left: 172px;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.playerone__fifthcard{
+    background: url(./pics/aceofhearts.png) white;
+    background-size: 54px 82px;
+    width: 54px;
+    height: 81px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: -94px;
+    left: 228px;
+    z-index: 5;
+}
+
+.playerone__fifthcard:hover{
+    background: url(./pics/aceofhearts.png) white;
+    background-size: 54px 82px;
+    width: 54px;
+    height: 81px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: -122px;
+    left: 228px;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.playerone__boardcard{
+    background: url(./pics/tenofclubs.png) white;
+    background-size: 54px 82px;
+    width: 54px;
+    height: 81px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: -374px;
+    left: 120px;
+}
+
+.cardtable__playertwo{
+	position: relative;
+	left: 8px;
+	top: -494px;
+}
+
+.playertwo__firstcard{
+    background: url(./pics/backside.png) white;
+    background-size: 82px 54px;
+    width: 81px;
+    height: 54px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: -142px;
+    z-index: 1;
+}
+
+.playertwo__secondcard{
+    background: url(./pics/backside.png) white;
+    background-size: 82px 54px;
+    width: 81px;
+    height: 54px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: -174px;
+    z-index: 2;
+}
+
+.playertwo__thirdcard{
+    background: url(./pics/backside.png) white;
+    background-size: 82px 54px;
+    width: 81px;
+    height: 54px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: -207px;
+    z-index: 3;
+}
+
+.playertwo__fourthcard{
+    background: url(./pics/backside.png) white;
+    background-size: 82px 54px;
+    width: 81px;
+    height: 54px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: -240px;
+    z-index: 4;
+}
+
+.playertwo__fifthcard{
+    background: url(./pics/backside.png) white;
+    background-size: 82px 54px;
+    width: 81px;
+    height: 54px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: -272px;
+    z-index: 5;
+}
+
+.playertwo__sixthcard{
+    background: url(./pics/backside.png) white;
+    background-size: 82px 54px;
+    width: 81px;
+    height: 54px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: -304px;
+    z-index: 6;
+}
+
+.cardtable__playerthree{
+    position: relative;
+    top: -1369px;
+    left: 282px;
+}
+
+.playerthree__firstcard{
+    background: url(./pics/back.png) white;
+    background-size: 54px 82px;
+    width: 54px;
+    height: 81px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: 238px;
+    left: 44px;
+    z-index: 1;
+}
+
+.playerthree__secondcard{
+    background: url(./pics/back.png) white;
+    background-size: 54px 82px;
+    width: 54px;
+    height: 81px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: 155px;
+    left: 62px;
+    z-index: 2;
+}
+
+.playerthree__thirdcard{
+    background: url(./pics/back.png) white;
+    background-size: 54px 82px;
+    width: 54px;
+    height: 81px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: 72px;
+    left: 80px;
+    z-index: 3;
+}
+
+.playerthree__fourthcard{
+    background: url(./pics/back.png) white;
+    background-size: 54px 82px;
+    width: 54px;
+    height: 81px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: -11px;
+    left: 98px;
+    z-index: 4;
+}
+
+.playerthree__fifthcard{
+    background: url(./pics/back.png) white;
+    background-size: 54px 82px;
+    width: 54px;
+    height: 81px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: -94px;
+    left: 116px;
+    z-index: 5;
+}
+
+.playerthree__sixthcard{
+    background: url(./pics/back.png) white;
+    background-size: 54px 82px;
+    width: 54px;
+    height: 81px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: -177px;
+    left: 134px;
+    z-index: 6;
+}
+
+.cardtable__playerfour{
+    position: relative;
+    left: 709px;
+    top: -1328px;
+}
+
+.playerfour__firstcard{
+    background: url(./pics/backside.png) white;
+    background-size: 82px 54px;
+    width: 81px;
+    height: 54px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: -142px;
+    z-index: 1;
+}
+
+.playerfour__secondcard{
+    background: url(./pics/backside.png) white;
+    background-size: 82px 54px;
+    width: 81px;
+    height: 54px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: -174px;
+    z-index: 2;
+}
+
+.playerfour__thirdcard{
+    background: url(./pics/backside.png) white;
+    background-size: 82px 54px;
+    width: 81px;
+    height: 54px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: -207px;
+    z-index: 3;
+}
+
+.playerfour__fourthcard{
+    background: url(./pics/backside.png) white;
+    background-size: 82px 54px;
+    width: 81px;
+    height: 54px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: -240px;
+    z-index: 4;
+}
+
+.playerfour__fifthcard{
+    background: url(./pics/backside.png) white;
+    background-size: 82px 54px;
+    width: 81px;
+    height: 54px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: -272px;
+    z-index: 5;
+}
+
+.playerfour__sixthcard{
+    background: url(./pics/backside.png) white;
+    background-size: 82px 54px;
+    width: 81px;
+    height: 54px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    top: -304px;
+    z-index: 6;
+}
+
+.cardtable__allclear{
+	position: relative;
+	top: -1914px;
+	left: 142px;
+}
+
+.allclear__first{
+	background: url(./pics/back.png) white;
+	background-size: 54px 82px;
+	width: 54px;
+	height: 81px;
+	border: 1px solid black;
+	border-radius: 6px;
+	position: relative;
+	top: 154px;
+	left: 42px;
+	z-index: 1;
+}
+
+.allclear__second{
+	background: url(./pics/back.png) white;
+	background-size: 54px 82px;
+	width: 54px;
+	height: 81px;
+	border: 1px solid black;
+	border-radius: 6px;
+	position: relative;
+	top: 70px;
+	left: 40px;
+	z-index: 2;
+}
+
+.allclear__third{
+	background: url(./pics/back.png) white;
+	background-size: 54px 82px;
+	width: 54px;
+	height: 81px;
+	border: 1px solid black;
+	border-radius: 6px;
+	position: relative;
+	top: -14px;
+	left: 38px;
+	z-index: 4;
+}
