@@ -1,0 +1,226 @@
+body {
+    background: url(../pics/4236532-background-images.jpg) no-repeat;
+    background-size: cover;
+    position: fixed;
+}
+
+.navi{
+    position: relative;
+    top: 0;
+}
+
+.link__option{
+    top: 34px;
+}
+
+.link{
+    font-family: Arial;
+    font-size: 16pt;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+    position: absolute;
+}
+
+.link:hover {
+    background: white;
+    color: #176086;
+}
+
+.headline{
+	width: 630px;
+	height: 70px;
+	margin: 25px;
+	position: relative;
+	left: 54%;
+}
+
+.headline__name{
+	font-family: Georgia;
+	font-size: 42pt;
+	font-style: italic;
+	color: white;
+}
+
+.cardtable{
+    background: green;
+    width: 800px;
+    height: 500px;
+    border: 18px solid darkgreen;
+    border-radius: 92px;
+    position: relative;
+    left: 44%;
+}
+
+.cardtable__deck{
+	position: absolute;
+	left: 66%;
+	top: 44%;
+}
+
+.card{
+	background: url(../pics/back.png) white;
+	background-size: 54px 82px;
+	width: 54px;
+	height: 81px;
+	border: 1px solid black;
+	border-radius: 6px;
+	position: absolute;
+}
+
+.deck__firstcard{
+	left: 44px;
+	top: 4px;
+	z-index: 4;
+}
+
+.deck__firstcard:hover {
+	background-image: url(../pics/aceofdiamonds.png);
+	top: 10px;
+	left: 32px;
+	cursor: pointer;
+}
+
+.deck__secondcard{
+	left: 42px;
+	top: 2px;
+	z-index: 3;
+}
+
+.deck__thirdcard{
+	left: 40px;
+	z-index: 2;
+}
+
+.deck__fourthcard{
+	background-image: url(../pics/jhearts.png);
+	transform: rotate(90deg);
+	z-index: 1;
+
+}
+
+.cardtable__playerone{
+	position: absolute;
+	left: 260px;
+	top: 409px;
+	font-size: 4px;
+}
+
+.player__firstcard{
+    z-index: 1;
+}
+
+.player__secondcard{
+	z-index: 2;
+	left: 20px;
+}
+
+.player__thirdcard{
+	z-index: 3;
+	left: 40px;
+}
+
+.player__fourthcard{
+	z-index: 4;
+	left: 60px;
+}
+
+.player__fifthcard{
+	z-index: 5;
+	left: 80px;
+}
+
+.player__sixthcard{
+    z-index: 6;
+    left: 100px;
+}
+
+.player_current .card{
+    position: static;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.player_current .card:hover{
+    position: relative;
+    top: -20px;
+    left: auto;
+}
+
+.player__boardcard{
+    position: static;
+}
+
+.card_clubs_ace{
+    background-image: url(../pics/aceofclubs.png);
+}
+
+.card_six_of_hearts{
+    background-image: url(../pics/sixofhearts.png);
+}
+
+.card_queen_of_spades{
+    background-image: url(../pics/queenofspades.png);
+}
+
+.card_king_of_diamonds{
+    background-image: url(../pics/kingofdiamonds.png);
+}
+
+.card_ace_of_hearts{
+    background-image: url(../pics/aceofhearts.png);
+}
+
+.card_ten_of_clubs{
+    background-image: url(../pics/tenofclubs.png);
+}
+
+.cardtable__playertwo{
+    transform: rotate(270deg);
+    position: absolute;
+    left: 8px;
+    top: 66%;
+}
+
+.cardtable__playerthree{
+    position: absolute;
+    left: 40%;
+    top: 8px;
+}
+
+.cardtable__playerfour{
+    transform: rotate(90deg);
+    position: absolute;
+    right: 8px;
+    top: 37%;
+}
+
+.cardtable__board {
+    position: absolute;
+    left: 52%;
+    top: 44%;
+}
+
+.cardtable__allclear{
+    position: absolute;
+    left: 22%;
+    top: 44%;
+}
+
+.allclear__first{
+    z-index: 3;
+}
+
+.allclear__second{
+    z-index: 2;
+    left: 2px;
+    top: 2px;
+}
+
+.allclear__third{
+    z-index: 1;
+    left: 4px;
+    top: 4px;
+}
